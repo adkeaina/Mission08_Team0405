@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6B2245F2-A7A1-4827-BECE-38D66C0470A4}|Mission08_Team0405\\Mission08_Team0405.csproj|c:\\users\\nicho\\source\\repos\\mission08_team0405\\mission08_team0405\\views\\task\\quadrants.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B2245F2-A7A1-4827-BECE-38D66C0470A4}|Mission08_Team0405\\Mission08_Team0405.csproj|solutionrelative:mission08_team0405\\views\\task\\quadrants.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B2245F2-A7A1-4827-BECE-38D66C0470A4}|Mission08_Team0405\\Mission08_Team0405.csproj|c:\\users\\nicho\\source\\repos\\mission08_team0405\\mission08_team0405\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B2245F2-A7A1-4827-BECE-38D66C0470A4}|Mission08_Team0405\\Mission08_Team0405.csproj|solutionrelative:mission08_team0405\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6B2245F2-A7A1-4827-BECE-38D66C0470A4}|Mission08_Team0405\\Mission08_Team0405.csproj|c:\\users\\nicho\\source\\repos\\mission08_team0405\\mission08_team0405\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B2245F2-A7A1-4827-BECE-38D66C0470A4}|Mission08_Team0405\\Mission08_Team0405.csproj|solutionrelative:mission08_team0405\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Mission08_Team0405\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Mission08_Team0405\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-24T21:12:11.314Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -23,6 +44,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Quadrants.cshtml",
+              "DocumentMoniker": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Views\\Task\\Quadrants.cshtml",
+              "RelativeDocumentMoniker": "Mission08_Team0405\\Views\\Task\\Quadrants.cshtml",
+              "ToolTip": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Views\\Task\\Quadrants.cshtml",
+              "RelativeToolTip": "Mission08_Team0405\\Views\\Task\\Quadrants.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAIwE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-24T21:13:53.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Mission08_Team0405\\Controllers\\HomeController.cs",
@@ -35,11 +69,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
