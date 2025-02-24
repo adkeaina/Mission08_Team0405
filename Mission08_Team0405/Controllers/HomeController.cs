@@ -6,26 +6,25 @@ namespace Mission08_Team0405.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private IGoalsRepository _repo;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(IGoalsRepository repo)
     {
-        _logger = logger;
+        _repo = repo;
     }
 
-    public IActionResult Index()
+    public IActionResult Quadrants()
     {
+        ViewBag.Goals = _repo.Goals.ToList();
+        ViewBag.Categories = _repo.Category.ToList();
         return View();
     }
 
-    public IActionResult Privacy()
+    public IActionResult AddEditTask()
     {
+        ViewBag.Categories = _repo.Category.ToList();
+
         return View();
     }
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-    }
 }

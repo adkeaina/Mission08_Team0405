@@ -6,7 +6,6 @@
     <title>@ViewData["Title"] - Mission08_Team0405</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/Mission08_Team0405.styles.css" asp-append-version="true"/>
 </head>
 <body>
 <header>
@@ -23,10 +22,10 @@
                         <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-controller="Task" asp-action="Index">All Tasks</a>
+                        <a class="nav-link text-dark" asp-controller="Home" asp-action="Quadrants">All Tasks</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-controller="Task" asp-action="Create">Add Task</a>
+                        <a class="nav-link text-dark" asp-controller="Home" asp-action="AddEditTask">Add Task</a>
                     </li>
                 </ul>
             </div>
@@ -42,7 +41,7 @@
 
 <footer class="border-top footer text-muted">
     <div class="container">
-        &copy; 2025 - Mission08_Team0405 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        &copy; 2025 - Mission08_Team0405
     </div>
 </footer>
 

@@ -1,7 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using Mission08_Team0405.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<GoalDbContext>(options =>
+{
+    options.UseSqlite(builder.Configuration.GetConnectionString("GoalConnection"));
+});
+
+builder.Services.AddScoped<IGoalsRepository, EFGoalsRepository>();
 
 var app = builder.Build();
 
