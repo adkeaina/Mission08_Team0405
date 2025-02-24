@@ -1,9 +1,13 @@
-namespace Mission08_Team0405.Models;
-using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
 
-public class Category
+namespace Mission08_Team0405.Models;
+
+public partial class Category
 {
-    [Key]
     public int CategoryId { get; set; }
-    public string CategoryName { get; set; }
+
+    public string CategoryName { get; set; } = null!;
+
+    public virtual ICollection<Goal> Goals { get; set; } = new List<Goal>();
 }
