@@ -22,18 +22,18 @@ namespace Mission08_Team0405.Controllers
 
         // GET method for Add/Edit Task
         [HttpGet]
-        public IActionResult AddEditTask(int? id)
+        public IActionResult AddEditTask(int? taskId)
         {
             ViewBag.Categories = _repo.Category.ToList();
             
-            // If id is null, we are adding a new task
-            if (id == null)
+            // If taskId is null, we are adding a new task
+            if (taskId == null)
             {
                 return View(new Goal());  // Return empty Goal model for new task
             }
             
-            // If id is provided, fetch the task for editing
-            var goal = _repo.Goals.FirstOrDefault(x => x.GoalId == id);
+            // If taskId is provided, fetch the task for editing
+            var goal = _repo.Goals.FirstOrDefault(x => x.TaskId == taskId);
             if (goal == null)
             {
                 return NotFound();  // If task not found
@@ -48,7 +48,7 @@ namespace Mission08_Team0405.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (goal.GoalId == 0) // Add new task
+                if (goal.TaskId == 0) // Add new task
                 {
                     _repo.Add(goal);
                 }
@@ -64,34 +64,5 @@ namespace Mission08_Team0405.Controllers
             ViewBag.Categories = _repo.Category.ToList();
             return View(goal);
         }
-
-        // Edit Task logic - Optional but could be merged with AddEditTask (above)
-        // No need for this method anymore if you handle it all in AddEditTask.
-        /*
-        [HttpGet]
-        public IActionResult EditTask(int id)
-        {
-            var goal = _repo.Goals.FirstOrDefault(x => x.GoalId == id);
-            ViewBag.Categories = _repo.Category.ToList();
-            return View("AddEditTask", goal);
-        }
-        */
-
-        // Optional: You could add a Delete method if needed
-        /*
-        [HttpPost]
-        public IActionResult Delete(int id)
-        {
-            var goal = _repo.Goals.FirstOrDefault(x => x.GoalId == id);
-            if (goal == null)
-            {
-                return NotFound();
-            }
-
-            _repo.Delete(goal);
-            _repo.SaveChanges();
-            return RedirectToAction("Quadrants");
-        }
-        */
     }
 }
