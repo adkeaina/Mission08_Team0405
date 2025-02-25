@@ -1,51 +1,51 @@
-
 @{
-    // ViewData["Title"] = ViewBag.Goal?.GoalId == null ? "Add Task" : "Edit Task";
     ViewData["Title"] = "Add Task";
 }
+@model Goal
 
 <h2>@ViewData["Title"]</h2>
 
-@* <form asp-controller="Tasks" asp-action="SaveTask" method="post"> *@
-@*     <input type="hidden" asp-for="TaskId" /> *@
-@*      *@
-@*     <div class="mb-3"> *@
-@*         <label asp-for="TaskName" class="form-label">Task Name</label> *@
-@*         <input asp-for="TaskName" class="form-control" required /> *@
-@*         <span asp-validation-for="TaskName" class="text-danger"></span> *@
-@*     </div> *@
-@* *@
-@*     <div class="mb-3"> *@
-@*         <label asp-for="DueDate" class="form-label">Due Date</label> *@
-@*         <input asp-for="DueDate" type="date" class="form-control" /> *@
-@*         <span asp-validation-for="DueDate" class="text-danger"></span> *@
-@*     </div> *@
-@* *@
-@*     <div class="mb-3"> *@
-@*         <label asp-for="Quadrant" class="form-label">Quadrant</label> *@
-@*         <select asp-for="Quadrant" class="form-select"> *@
-@*             <option value="I">I</option> *@
-@*             <option value="II">II</option> *@
-@*             <option value="III">III</option> *@
-@*             <option value="IV">IV</option> *@
-@*         </select> *@
-@*     </div> *@
-@*     $1$ make sure Category is coming from the Categories list #1# *@
-@*     <div class="mb-3"> *@
-@*         <label asp-for="Category" class="form-label">Category</label> *@
-@*         <select asp-for="Category" class="form-select"> *@
-@*             <option value="Home">Home</option> *@
-@*             <option value="School">School</option> *@
-@*             <option value="Work">Work</option> *@
-@*             <option value="Church">Church</option> *@
-@*         </select> *@
-@*     </div> *@
-@* *@
-@*     <div class="form-check mb-3"> *@
-@*         <input asp-for="Completed" class="form-check-input" /> *@
-@*         <label asp-for="Completed" class="form-check-label">Completed</label> *@
-@*     </div> *@
-@* *@
-@*     <button type="submit" class="btn btn-primary">Save Task</button> *@
-@*     <a asp-controller="Home" asp-action="Quadrants" class="btn btn-secondary">Cancel</a> *@
-@* </form> *@
+<form asp-controller="Home" asp-action="AddEditTask" method="post">
+    <div class="mb-3">
+        <label asp-for="Task" class="form-label">Task Name</label>
+        <input asp-for="Task" class="form-control" required />
+        <span asp-validation-for="Task" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="DueDate" class="form-label">Due Date</label>
+        <input asp-for="DueDate" type="date" class="form-control" required />
+        <span asp-validation-for="DueDate" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Quadrant" class="form-label">Quadrant</label>
+        <select asp-for="Quadrant" class="form-select" required>
+            <option value="1">I: Important / Urgent</option>
+            <option value="2">II: Important / Not Urgent</option>
+            <option value="3">III: Not Important / Urgent</option>
+            <option value="4">IV: Not Important / Not Urgent</option>
+        </select>
+        <span asp-validation-for="Quadrant" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="CategoryId" class="form-label">Category</label>
+        <select asp-for="CategoryId" class="form-select" required>
+            <option value="">Select a Category</option>
+            @foreach (var category in ViewBag.Categories)
+            {
+                <option value="@category.CategoryId">@category.CategoryName</option>
+            }
+        </select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div>
+
+    <div class="form-check mb-3">
+        <input asp-for="Completed" class="form-check-input" type="checkbox" />
+        <label asp-for="Completed" class="form-check-label">Completed</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Task</button>
+    <a asp-controller="Home" asp-action="Quadrants" class="btn btn-secondary">Cancel</a>
+</form>
