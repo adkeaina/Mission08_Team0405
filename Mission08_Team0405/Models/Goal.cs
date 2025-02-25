@@ -15,7 +15,7 @@ public partial class Goal
 
     public int CategoryId { get; set; }
 
-    public int Completed { get; set; }
+    public bool Completed { get; set; }
 
     public virtual Category Category { get; set; } = null!;
 }

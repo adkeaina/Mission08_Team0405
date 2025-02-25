@@ -11,4 +11,15 @@ public class EFGoalsRepository : IGoalsRepository
     
     public List<Goal> Goals => _context.Goals.ToList();
     public List<Category> Category => _context.Category.ToList();
+    public void Add(Goal goal)
+    {
+        _context.Add(goal);
+        _context.SaveChanges();
+    }
+
+    public void Update(Goal goal)
+    {
+        _context.Update(goal);
+        _context.SaveChanges();
+    }
 }
