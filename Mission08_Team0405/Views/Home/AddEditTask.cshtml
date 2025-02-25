@@ -2,13 +2,13 @@
 
 @{
     // Set the page title based on whether we are adding or editing a task
-    ViewData["Title"] = Model.GoalId == 0 ? "Add Task" : "Edit Task";
+    ViewData["Title"] = Model.TaskId == 0 ? "Add Task" : "Edit Task";
 }
 
 <h2>@ViewData["Title"]</h2>
 
 <form asp-controller="Home" asp-action="AddEditTask" method="post">
-    <input type="hidden" asp-for="GoalId" />
+    <input type="hidden" asp-for="TaskId" />
     
     <!-- Task Name -->
     <div class="mb-3">
@@ -57,7 +57,7 @@
 
     <!-- Submit Button Text -->
     <button type="submit" class="btn btn-primary">
-        @if (Model.GoalId == 0)
+        @if (Model.TaskId == 0)
         {
             <text>Add Task</text>
         }
