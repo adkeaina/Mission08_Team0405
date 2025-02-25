@@ -1,14 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
 namespace Mission08_Team0405.Models;
 
-public class GoalDbContext : DbContext
+public partial class GoalDbContext : DbContext
 {
-    public GoalDbContext(DbContextOptions<GoalDbContext> options) : base(options)
+    public GoalDbContext()
     {
-        
     }
-    
-    public DbSet<Goal> Goals { get; set; }
+
+    public GoalDbContext(DbContextOptions<GoalDbContext> options)
+        : base(options)
+    {
+    }
+
+    public virtual DbSet<Category> Category { get; set; }
+
+    public virtual DbSet<Goal> Goals { get; set; }
     
 }

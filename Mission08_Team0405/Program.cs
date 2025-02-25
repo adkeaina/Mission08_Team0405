@@ -11,6 +11,8 @@ builder.Services.AddDbContext<GoalDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("GoalConnection"));
 });
 
+builder.Services.AddScoped<IGoalsRepository, EFGoalsRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

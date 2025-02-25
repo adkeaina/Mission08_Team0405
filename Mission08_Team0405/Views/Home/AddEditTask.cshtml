@@ -1,0 +1,72 @@
+@model Mission08_Team0405.Models.Goal
+
+@{
+    // Set the page title based on whether we are adding or editing a task
+    ViewData["Title"] = Model.GoalId == 0 ? "Add Task" : "Edit Task";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-controller="Home" asp-action="AddEditTask" method="post">
+    <input type="hidden" asp-for="GoalId" />
+    
+    <!-- Task Name -->
+    <div class="mb-3">
+        <label asp-for="Task" class="form-label">Task Name</label>
+        <input asp-for="Task" class="form-control" required />
+        <span asp-validation-for="Task" class="text-danger"></span>
+    </div>
+
+    <!-- Due Date -->
+    <div class="mb-3">
+        <label asp-for="DueDate" class="form-label">Due Date</label>
+        <input asp-for="DueDate" type="date" class="form-control" />
+        <span asp-validation-for="DueDate" class="text-danger"></span>
+    </div>
+
+    <!-- Quadrant -->
+    <div class="mb-3">
+        <label asp-for="Quadrant" class="form-label">Quadrant</label>
+        <select asp-for="Quadrant" class="form-select">
+            <option value="1">I: Important / Urgent</option>
+            <option value="2">II: Important / Not Urgent</option>
+            <option value="3">III: Not Important / Urgent</option>
+            <option value="4">IV: Not Important / Not Urgent</option>
+        </select>
+    </div>
+
+    <!-- Category -->
+    <div class="mb-3">
+        <label asp-for="CategoryId" class="form-label">Category</label>
+        <select asp-for="CategoryId" class="form-select">
+            @foreach (var category in ViewBag.Categories as List<Category>)
+            {
+                <option value="@category.CategoryId" 
+                        @(Model.CategoryId == category.CategoryId ? "selected" : "")>
+                    @category.CategoryName
+                </option>
+            }
+        </select>
+    </div>
+
+    <!-- Completed Checkbox -->
+    <div class="form-check mb-3">
+        <input asp-for="Completed" class="form-check-input" type="checkbox" />
+        <label asp-for="Completed" class="form-check-label">Completed</label>
+    </div>
+
+    <!-- Submit Button Text -->
+    <button type="submit" class="btn btn-primary">
+        @if (Model.GoalId == 0)
+        {
+            <text>Add Task</text>
+        }
+        else
+        {
+            <text>Edit Task</text>
+        }
+    </button>
+
+    <!-- Cancel Button -->
+    <a asp-controller="Home" asp-action="Quadrants" class="btn btn-secondary">Cancel</a>
+</form>
