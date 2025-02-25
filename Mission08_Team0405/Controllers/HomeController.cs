@@ -19,7 +19,7 @@ public class HomeController : Controller
         ViewBag.Categories = _repo.Category.ToList();
         return View();
     }
-
+    [HttpGet]
     public IActionResult AddEditTask()
     {
         ViewBag.Categories = _repo.Category.ToList();
@@ -27,4 +27,18 @@ public class HomeController : Controller
         return View();
     }
 
+    [HttpPost]
+    public IActionResult AddEditTask(Goal goal)
+    {
+        if (ModelState.IsValid)
+        {
+            _repo.Add(goal);  // Add task to repository
+            return RedirectToAction("Quadrants");
+        }
+    
+        ViewBag.Categories = _repo.Category.ToList();
+        return View(goal);
+    }
 }
+
+
