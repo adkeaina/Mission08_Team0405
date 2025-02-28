@@ -7,7 +7,7 @@ public partial class Goal
 {
     public int GoalId { get; set; }
 
-    public string Task { get; set; } = null!;
+    public string TaskName { get; set; } = null!;
 
     public string DueDate { get; set; } = null!;
 
