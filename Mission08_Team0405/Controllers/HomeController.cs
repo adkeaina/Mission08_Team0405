@@ -15,7 +15,13 @@ namespace Mission08_Team0405.Controllers
 
         public IActionResult Quadrants()
         {
-            ViewBag.Goals = _repo.Goals.ToList();
+            var tasks = _repo.Goals.Where(t => !t.Completed).ToList();
+
+            ViewBag.Quadrant1 = tasks.Where(t => t.Quadrant == 1).ToList();
+            ViewBag.Quadrant2 = tasks.Where(t => t.Quadrant == 2).ToList();
+            ViewBag.Quadrant3 = tasks.Where(t => t.Quadrant == 3).ToList();
+            ViewBag.Quadrant4 = tasks.Where(t => t.Quadrant == 4).ToList();
+
             ViewBag.Categories = _repo.Category.ToList();
             return View();
         }

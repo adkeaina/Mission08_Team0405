@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B2245F2-A7A1-4827-BECE-38D66C0470A4}|Mission08_Team0405\\Mission08_Team0405.csproj|c:\\users\\nicho\\source\\repos\\mission08_team0405\\mission08_team0405\\views\\task\\quadrants.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6B2245F2-A7A1-4827-BECE-38D66C0470A4}|Mission08_Team0405\\Mission08_Team0405.csproj|solutionrelative:mission08_team0405\\views\\task\\quadrants.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6B2245F2-A7A1-4827-BECE-38D66C0470A4}|Mission08_Team0405\\Mission08_Team0405.csproj|c:\\users\\nicho\\source\\repos\\mission08_team0405\\mission08_team0405\\views\\home\\quadrants.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B2245F2-A7A1-4827-BECE-38D66C0470A4}|Mission08_Team0405\\Mission08_Team0405.csproj|solutionrelative:mission08_team0405\\views\\home\\quadrants.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B2245F2-A7A1-4827-BECE-38D66C0470A4}|Mission08_Team0405\\Mission08_Team0405.csproj|c:\\users\\nicho\\source\\repos\\mission08_team0405\\mission08_team0405\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6B2245F2-A7A1-4827-BECE-38D66C0470A4}|Mission08_Team0405\\Mission08_Team0405.csproj|solutionrelative:mission08_team0405\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6B2245F2-A7A1-4827-BECE-38D66C0470A4}|Mission08_Team0405\\Mission08_Team0405.csproj|c:\\users\\nicho\\source\\repos\\mission08_team0405\\mission08_team0405\\models\\goal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B2245F2-A7A1-4827-BECE-38D66C0470A4}|Mission08_Team0405\\Mission08_Team0405.csproj|solutionrelative:mission08_team0405\\models\\goal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B2245F2-A7A1-4827-BECE-38D66C0470A4}|Mission08_Team0405\\Mission08_Team0405.csproj|c:\\users\\nicho\\source\\repos\\mission08_team0405\\mission08_team0405\\views\\home\\quadrants.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B2245F2-A7A1-4827-BECE-38D66C0470A4}|Mission08_Team0405\\Mission08_Team0405.csproj|solutionrelative:mission08_team0405\\views\\home\\quadrants.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B2245F2-A7A1-4827-BECE-38D66C0470A4}|Mission08_Team0405\\Mission08_Team0405.csproj|c:\\users\\nicho\\source\\repos\\mission08_team0405\\mission08_team0405\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B2245F2-A7A1-4827-BECE-38D66C0470A4}|Mission08_Team0405\\Mission08_Team0405.csproj|solutionrelative:mission08_team0405\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Views\\Task\\Quadrants.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Mission08_Team0405\\Views\\Task\\Quadrants.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B2245F2-A7A1-4827-BECE-38D66C0470A4}|Mission08_Team0405\\Mission08_Team0405.csproj|c:\\users\\nicho\\source\\repos\\mission08_team0405\\mission08_team0405\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B2245F2-A7A1-4827-BECE-38D66C0470A4}|Mission08_Team0405\\Mission08_Team0405.csproj|solutionrelative:mission08_team0405\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,21 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Mission08_Team0405\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "Mission08_Team0405\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T21:12:11.314Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -44,27 +43,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Quadrants.cshtml",
-              "DocumentMoniker": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Views\\Task\\Quadrants.cshtml",
-              "RelativeDocumentMoniker": "Mission08_Team0405\\Views\\Task\\Quadrants.cshtml",
-              "ToolTip": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Views\\Task\\Quadrants.cshtml",
-              "RelativeToolTip": "Mission08_Team0405\\Views\\Task\\Quadrants.cshtml",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAIwE0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T21:13:53.334Z",
+              "Title": "Quadrants.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Views\\Home\\Quadrants.cshtml.cs",
+              "RelativeDocumentMoniker": "Mission08_Team0405\\Views\\Home\\Quadrants.cshtml.cs",
+              "ToolTip": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Views\\Home\\Quadrants.cshtml.cs",
+              "RelativeToolTip": "Mission08_Team0405\\Views\\Home\\Quadrants.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T06:23:52.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Goal.cs",
+              "DocumentMoniker": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Models\\Goal.cs",
+              "RelativeDocumentMoniker": "Mission08_Team0405\\Models\\Goal.cs",
+              "ToolTip": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Models\\Goal.cs",
+              "RelativeToolTip": "Mission08_Team0405\\Models\\Goal.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T06:23:18.954Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Mission08_Team0405\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Mission08_Team0405\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA1wBgAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T21:07:51.806Z",
+              "Title": "Quadrants.cshtml",
+              "DocumentMoniker": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Views\\Home\\Quadrants.cshtml",
+              "RelativeDocumentMoniker": "Mission08_Team0405\\Views\\Home\\Quadrants.cshtml",
+              "ToolTip": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Views\\Home\\Quadrants.cshtml",
+              "RelativeToolTip": "Mission08_Team0405\\Views\\Home\\Quadrants.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T06:07:11.838Z",
               "EditorCaption": ""
             },
             {
@@ -74,6 +86,42 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Mission08_Team0405\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Mission08_Team0405\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAwwBoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T21:07:51.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Quadrants.cshtml",
+              "DocumentMoniker": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Views\\Task\\Quadrants.cshtml",
+              "RelativeDocumentMoniker": "Mission08_Team0405\\Views\\Task\\Quadrants.cshtml",
+              "ToolTip": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Views\\Task\\Quadrants.cshtml",
+              "RelativeToolTip": "Mission08_Team0405\\Views\\Task\\Quadrants.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-24T21:13:53.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Mission08_Team0405\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\nicho\\source\\repos\\Mission08_Team0405\\Mission08_Team0405\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Mission08_Team0405\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-24T21:12:11.314Z"
             }
           ]
         }
