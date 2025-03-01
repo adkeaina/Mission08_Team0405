@@ -22,4 +22,16 @@ public class EFGoalsRepository : IGoalsRepository
         _context.Update(goal);
         _context.SaveChanges();
     }
+
+    public void Remove(Goal goal)
+    {
+        _context.Remove(goal);
+        _context.SaveChanges();
+    }
+
+    public void MarkCompleted(Goal goal)
+    {
+        goal.Completed = !goal.Completed;
+        _context.SaveChanges();
+    }
 }

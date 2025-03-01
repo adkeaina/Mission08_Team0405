@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ActionConstraints;
 using Mission08_Team0405.Models;
 
 namespace Mission08_Team0405.Controllers
@@ -13,6 +14,11 @@ namespace Mission08_Team0405.Controllers
             _repo = repo;
         }
 
+        public IActionResult Index()
+        {
+            return RedirectToAction("Quadrants");
+        }
+
         public IActionResult Quadrants()
         {
             var tasks = _repo.Goals.Where(t => !t.Completed).ToList();
@@ -21,7 +27,9 @@ namespace Mission08_Team0405.Controllers
             ViewBag.Quadrant2 = tasks.Where(t => t.Quadrant == 2).ToList();
             ViewBag.Quadrant3 = tasks.Where(t => t.Quadrant == 3).ToList();
             ViewBag.Quadrant4 = tasks.Where(t => t.Quadrant == 4).ToList();
-
+            
+            ViewBag.CompletedTasks = _repo.Goals.Where(t => t.Completed).ToList();
+            Console.WriteLine(ViewBag.CompletedTasks.Count);
             ViewBag.Categories = _repo.Category.ToList();
             return View();
         }
@@ -39,7 +47,7 @@ namespace Mission08_Team0405.Controllers
             }
             
             // If taskId is provided, fetch the task for editing
-            var goal = _repo.Goals.FirstOrDefault(x => x.TaskId == taskId);
+            var goal = _repo.Goals.FirstOrDefault(x => x.GoalId == taskId);
             if (goal == null)
             {
                 return NotFound();  // If task not found
@@ -54,7 +62,7 @@ namespace Mission08_Team0405.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (goal.TaskId == 0) // Add new task
+                if (goal.GoalId == 0) // Add new task
                 {
                     _repo.Add(goal);
                 }
@@ -62,13 +70,54 @@ namespace Mission08_Team0405.Controllers
                 {
                     _repo.Update(goal);
                 }
-                _repo.SaveChanges();  // Make sure to save the changes to the repository
                 return RedirectToAction("Quadrants");
             }
 
             // If model state is invalid, return the form with validation errors
             ViewBag.Categories = _repo.Category.ToList();
+            foreach (var modelError in ModelState)
+            {
+                if (modelError.Value.Errors.Count > 0)
+                {
+                    foreach (var error in modelError.Value.Errors)
+                    {
+                        // Log or display error messages
+                        Console.WriteLine($"Field: {modelError.Key} - Error: {error.ErrorMessage}");
+                        Console.WriteLine(goal.CategoryId);
+                    }
+                }
+            }
             return View(goal);
+        }
+
+        public IActionResult DeleteTask(int? taskId)
+        {
+            if (taskId == null)
+            {
+                return NotFound();
+            }
+
+            var goal = _repo.Goals.FirstOrDefault(x => x.GoalId == taskId);
+            if (goal == null)
+            {
+                return NotFound();
+            }
+
+            _repo.Remove(goal);
+
+            return RedirectToAction("Quadrants");
+        }
+
+        public IActionResult MarkCompleted(int? taskId)
+        {
+            var goal = _repo.Goals.FirstOrDefault(g => g.GoalId == taskId);
+            if (goal == null)
+            {
+                // Handle case where the goal is not found
+                return NotFound();
+            }
+            _repo.MarkCompleted(goal);
+            return RedirectToAction("Quadrants");
         }
     }
 }

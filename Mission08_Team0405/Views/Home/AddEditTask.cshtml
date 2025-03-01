@@ -28,10 +28,19 @@
     <div class="mb-3">
         <label asp-for="Quadrant" class="form-label">Quadrant</label>
         <select asp-for="Quadrant" class="form-select">
-            <option value="1">I: Important / Urgent</option>
-            <option value="2">II: Important / Not Urgent</option>
-            <option value="3">III: Not Important / Urgent</option>
-            <option value="4">IV: Not Important / Not Urgent</option>
+            <option value="">Select an option</option>
+            <option value="1">
+                I: Important / Urgent
+            </option>
+            <option value="2">
+                II: Important / Not Urgent
+            </option>
+            <option value="3">
+                III: Not Important / Urgent
+            </option>
+            <option value="4">
+                IV: Not Important / Not Urgent
+            </option>
         </select>
     </div>
 
@@ -39,33 +48,21 @@
     <div class="mb-3">
         <label asp-for="CategoryId" class="form-label">Category</label>
         <select asp-for="CategoryId" class="form-select">
-            @foreach (var category in ViewBag.Categories as List<Category>)
+            <option value="">Select a Category</option>  <!-- Set the default value to empty -->
+            @foreach (Category category in ViewBag.Categories)
             {
-                <option value="@category.CategoryId" 
-                        @(Model.CategoryId == category.CategoryId ? "selected" : "")>
-                    @category.CategoryName
-                </option>
+                <option value="@category.CategoryId">@category.CategoryName</option>
             }
         </select>
-    </div>
-
-    <!-- Completed Checkbox -->
-    <div class="form-check mb-3">
-        <input asp-for="Completed" class="form-check-input" type="checkbox" />
-        <label asp-for="Completed" class="form-check-label">Completed</label>
-    </div>
-
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div>    
+    <input asp-for="Completed" type="hidden" />
+    
     <!-- Submit Button Text -->
     <button type="submit" class="btn btn-primary">
-        @if (Model.GoalId == 0)
-        {
-            <text>Add Task</text>
-        }
-        else
-        {
-            <text>Edit Task</text>
-        }
+        <text>Submit</text>
     </button>
+    <div asp-validation-summary="All" class="text-danger"></div>
 
     <!-- Cancel Button -->
     <a asp-controller="Home" asp-action="Quadrants" class="btn btn-secondary">Cancel</a>
